@@ -1,0 +1,4 @@
+FROM microsoft/dotnet:1.0.5-runtime
+
+ADD extract_dotnet.sh /tools/extract_dotnet.sh
+RUN /tools/extract_dotnet.sh /dotnet

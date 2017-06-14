@@ -1,0 +1,11 @@
+language: c
+sudo: required
+services:
+- docker
+notifications:
+  email: true
+script:
+- make build 
+after_success:
+- docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
+- docker push travelrepublic/dotnet
