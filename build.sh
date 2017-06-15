@@ -2,7 +2,7 @@
 # Version of dotnet to create image for
 # Remember you will need to change the version in Dockerfile.extractor as well as here 
 #  for different version
-version=1.1.2
+version=2.0.0-preview1
 
 # Build image to extract dotnet from. Files are placed in /dotnet on the container
 docker build -t travelrepublic/dotnet-extractor:$version . -f Dockerfile.extractor
